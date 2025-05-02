@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/studentschema#",
+  "type": "object",
+  "required": ["name", "age", "subjects"],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 5,
+      "maximum": 100
+    },
+    "subjects": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
+}
+
